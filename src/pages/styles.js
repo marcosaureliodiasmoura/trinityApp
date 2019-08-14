@@ -216,7 +216,7 @@ justify-content: center;
 margin-left: 29%;
 
 @media (max-width: 600px) {
-    margin-left: 200px;
+    margin-left: 150px;
     /* background: red; */
   }
 
@@ -252,7 +252,7 @@ export const ModalImage = styled.img`
   border: 1px solid #e2e2e2;
 
   @media (max-width: 600px) {
-    width: 300px;
+    width: 250px;
     height: 200px;
       }
 
@@ -260,7 +260,6 @@ export const ModalImage = styled.img`
   @media (min-width: 610px) {
     width: 60%;
     height: 60%;
-
   }
 
 `;
