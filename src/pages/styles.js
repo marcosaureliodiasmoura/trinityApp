@@ -1,8 +1,15 @@
 import styled from 'styled-components';
-import img1 from '../images/img1.jpg';
-import img2 from '../images/img2.jpg';
-import img3 from '../images/img3.jpg';
-import img4 from '../images/img4.jpg';
+import img1_300 from '../images/img1-300w.jpg';
+import img1 from '../images/img1-800w.jpg';
+
+import img2_300 from '../images/img2-300w.jpg';
+import img2 from '../images/img2-800w.jpg';
+
+import img3_300 from '../images/img3-300w.jpg';
+import img3 from '../images/img3-800w.jpg';
+
+import img4_300 from '../images/img4-300w.jpg';
+import img4 from '../images/img4-800w.jpg';
 
 
 export const ContainerTitle = styled.div`
@@ -71,7 +78,6 @@ justify-content: space-around;
 
   @media (min-width: 1200px) {
   }
-
 `;
 
 
@@ -90,6 +96,10 @@ export const ContainerImg1 = styled.div`
 
   @media (max-width: 600px) {
     margin-right: 100px;
+    background-image: url(${img1_300});
+    width: 280px;
+    height: 280px;
+
   }
 
   @media (min-width: 800px) {
@@ -118,6 +128,9 @@ export const ContainerImg2 = styled.div`
 
   @media (max-width: 600px) {
     margin-left: 100px;
+    background-image: url(${img2_300});
+    width: 280px;
+    height: 280px;
   }
 
 
@@ -145,6 +158,10 @@ export const ContainerImg3 = styled.div`
   @media (max-width: 600px) {
     margin-right: 100px;
     margin-top: 60px;
+    background-image: url(${img3_300});
+    width: 280px;
+    height: 280px;
+
 
   }
 
@@ -178,6 +195,10 @@ export const ContainerImg4 = styled.div`
   @media (max-width: 600px) {
     margin-left: 100px;
     margin-top: 10px;
+    background-image: url(${img4_300});
+    width: 280px;
+    height: 280px;
+
 
   }
   @media (min-width: 800px) {
@@ -232,6 +253,12 @@ export const ModalClose = styled.text`
  font-size: 60px;
  font: 'Open Sans', sans-serif;
  width: 100%;
+
+ @media (max-width: 600px) {
+  font-size: 40px;
+  }
+
+
 `;
 
 export const ModalTitle = styled.text`
@@ -254,6 +281,7 @@ export const ModalImage = styled.img`
   @media (max-width: 600px) {
     width: 250px;
     height: 200px;
+
       }
 
 
@@ -263,5 +291,6 @@ export const ModalImage = styled.img`
   }
 
 `;
+
 
 

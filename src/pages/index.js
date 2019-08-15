@@ -14,7 +14,7 @@ ModalTitle,
 ModalButton,
  } from './styles';
 import GlobalStyle from '../styles/global';
-import img1 from '../images/img1.jpg';
+// import img1 from '../images/img1.jpg';
 
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
   state = {
     show: false,
     title: '',
-    img: `${img1}`,
+    // img: `${img1}`,
   }
 
   showModal = () => {
@@ -50,7 +50,7 @@ class App extends Component {
             <ContainerImage>
               <button
                 onClick={this.showModal}>
-                <ContainerImg1/>
+                <ContainerImg1></ContainerImg1>
               </button>
 
               <button
@@ -82,7 +82,13 @@ class App extends Component {
                 </button>
                 </ModalButton>
                 <ModalTitle>{this.state.title}</ModalTitle>
-                  <ModalImage src={img1}/>
+                  <ModalImage 
+                  // src={img1}
+                  srcset="img1-300w.jpg 300w,
+                  img1-800w.jpg 800w"
+                  sizes="(max-width: 799px) 100vw,
+                  (min-width:800px) 800px" src="img1-800w.jpg"
+                  />
               </ModalContainer>
             </Modal>
           ): null}
